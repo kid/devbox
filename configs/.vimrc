@@ -19,20 +19,16 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'pangloss/vim-javascript'
+Plug 'isRuslan/vim-es6'
 Plug 'mxw/vim-jsx'
 
 call plug#end()
 
 set t_Co=256
-set mouse=a
-set ttymouse=xterm2
-set colorcolumn=100
-set cursorline
-set hlsearch
-set number
-set expandtab
-set ts=2
-set sw=2
 set mouse=a
 set ttymouse=xterm2
 set colorcolumn=100
@@ -54,6 +50,9 @@ let g:airline#extensions#tabline#enabled = 1
 
 " enable vim-jsx for .js files
 let g:jsx_ext_required = 0
+let g:syntastic_javascript_checkers = ['eslint']
+
+map <C-n> :NERDTreeToggle<CR>
 
 if !empty(glob("~/.vim/plugged/vim-tomorrow-theme/colors/Tomorrow-Night-Eighties.vim"))
   colorscheme Tomorrow-Night-Eighties
