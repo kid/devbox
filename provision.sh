@@ -22,4 +22,6 @@ pacaur -S --noconfirm --noedit \
   dmenu2 \
   tmux
 
+echo "EDITOR=vim" | sudo tee --append /etc/environment
+
 # https://github.com/tagae/dotfiles/blob/master/xinitrc.d/10-resources.sh
