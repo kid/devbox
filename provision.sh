@@ -10,7 +10,7 @@ sudo pacman-key --keyserver hkp://keyserver.kjsl.com:80 --refresh-keys
 
 git config --global url.https://github.com/.insteadOf git://github.com/
 
-pacaur -Suy
+pacaur -Suy --noconfirm --noedit
 pacaur -S --noconfirm --noedit \
   xorg-server \
   xorg-server-utils \
