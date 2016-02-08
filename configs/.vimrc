@@ -54,6 +54,9 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 map <C-n> :NERDTreeToggle<CR>
 
+" sudo write :)
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
 if !empty(glob("~/.vim/plugged/vim-tomorrow-theme/colors/Tomorrow-Night-Eighties.vim"))
   colorscheme Tomorrow-Night-Eighties
 endif
