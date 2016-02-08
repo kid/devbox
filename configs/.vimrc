@@ -24,6 +24,7 @@ Plug 'scrooloose/syntastic'
 Plug 'pangloss/vim-javascript'
 Plug 'isRuslan/vim-es6'
 Plug 'mxw/vim-jsx'
+Plug 'dag/vim-fish'
 
 call plug#end()
 
