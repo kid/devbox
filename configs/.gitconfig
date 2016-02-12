@@ -1,0 +1,26 @@
+[url "https://github.com/"]
+	insteadOf = git://github.com/
+[user]
+	name = Arnaud Rebts
+	email = arnaud.rebts@gmail.com
+[color]
+	ui = auto
+[push]
+	default = simple
+[rebase]
+	autosquash = true
+[rerere]
+	enabled = true
+[alias]
+	st = status -s
+	cl = clone
+	ci = commit
+	co = checkout
+	br = branch
+	r = reset
+	cp = cherry-pick
+	gr = grp -Ii
+	diff = diff --word-diff
+	ls = log --decorate --oneline
+	ll = log --decorate --numstat
+	lg = log --decorate --graph --abbrev-commit --date=relative --all
