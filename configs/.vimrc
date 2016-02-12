@@ -39,6 +39,10 @@ set expandtab
 set ts=2
 set sw=2
 
+" Fix a race condition where the tabline would display the first line
+" https://github.com/vim-airline/vim-airline/issues/393#issuecomment-177191552
+set t_RV=
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+,eol:¬
 set list
