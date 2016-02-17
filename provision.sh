@@ -54,6 +54,10 @@ pacaur -S --noconfirm --needed --noedit \
 grep -q "^EDITOR=vim" /etc/environment || echo "EDITOR=vim" | sudo tee --append /etc/environment
 grep -q "^VISUAL=vim" /etc/environment || echo "VISUAL=vim" | sudo tee --append /etc/environment
 
+# Enable and start vboxservice for time synchronization
+sudo systemctl enable vboxservice
+sudo systemctl start vboxservice
+
 # Install nvm
 cd /home/vagrant && git clone https://github.com/creationix/nvm.git .nvm && cd .nvm && git checkout `git describe --abbrev=0 --tags`
 
